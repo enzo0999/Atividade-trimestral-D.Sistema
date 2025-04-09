@@ -1,17 +1,17 @@
 import random
 import time
-
+ 
 def sensor_de_presenca():
     return random.choice(["presença", "nenhuma presença"])
 
 def acender_lampada():
     estado_sensor = sensor_de_presenca()
     print("-------------------------")
+    print(f" Sensor detectou: {estado_sensor}") 
     if estado_sensor == "presença":
         print(" Lâmpada : 💡 (acesa)")
     else:
         print(" Lâmpada : desligada")
-    print(f" Sensor detectou: {estado_sensor}")
     print("-------------------------")
 
 def interruptor():
