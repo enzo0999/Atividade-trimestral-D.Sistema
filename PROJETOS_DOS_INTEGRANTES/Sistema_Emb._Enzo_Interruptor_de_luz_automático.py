@@ -4,7 +4,7 @@ import time
 def sensor_de_presenca():
     return random.choice(["presença", "nenhuma presença"])
 
-def acender_lampada():
+def lampada():
     estado_sensor = sensor_de_presenca()
     print("-------------------------")
     print(f" Sensor detectou: {estado_sensor}") 
@@ -16,7 +16,8 @@ def acender_lampada():
 
 def interruptor():
     while True:
-        acender_lampada()
+        lampada()
         time.sleep(5)
 
 interruptor()
+

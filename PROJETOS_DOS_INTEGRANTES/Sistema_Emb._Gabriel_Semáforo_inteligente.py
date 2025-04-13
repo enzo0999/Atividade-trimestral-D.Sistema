@@ -2,9 +2,9 @@ import time
 
 def mostrar_semaforo(cor):
     print(f"----------------")
-    print(f"Vermelho  : {'🔴' if cor == 'Vermelho' else ''}")
-    print(f"Amarelo   : {'🟡' if cor == 'Amarelo' else ''}")
-    print(f"Verde     : {'🟢' if cor == 'Verde' else ''}")
+    print(f"Vermelho  : {'🔴' if cor == 'Vermelho' else '⚫'}")
+    print(f"Amarelo   : {'🟡' if cor == 'Amarelo' else '⚫'}")
+    print(f"Verde     : {'🟢' if cor == 'Verde' else '⚫'}")
     print(f"----------------")
 
 def semaforo():
